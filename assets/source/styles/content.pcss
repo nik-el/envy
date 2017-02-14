@@ -62,9 +62,70 @@
 }
 
 .promote{
+  margin-bottom: 115px;
   &__title{
-  margin: 70px 0 50px;
-  font-size: 5.6rem;
-  font-weight: 700;
+    margin: 70px 0 55px;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+  }
 }
+
+.option{
+  display: inline-block;
+  vertical-align: top;
+  width: 290px;
+  padding-right: 40px;
+  &__title{
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weigth: 700;
+    letter-spacing: -0.3px;
+  }
+  &__descr{
+    margin-bottom: 17px;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.3px;
+  }
+  &__img{
+    position:relative;
+    margin-bottom: 20px;
+    width: 242px;
+    height: 200px;
+
+    background: #f3f3f3;
+    box-shadow: 4px 4px 0px rgb(194,194,194);
+    &--small{
+      height: 150px;
+    }
+  }
+  &__link{
+    display:inline-block;
+    vertical-align: top;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    &:hover{
+      color: #c72319;
+      border-bottom: 2px solid rgba(199,35,25,0.2);
+    }
+  }
+  &__svg{
+    position: absolute;
+    left: 5px;
+  }
+  &__social{
+    display:inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    padding: 5px;
+    padding-left: 30px;
+    font-size: 2rem;
+    background-color: #ebebeb;
+    border-radius: 5px;
+  }
 }

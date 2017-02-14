@@ -19,23 +19,32 @@ div.content
       p.benefit__text
         | Every customers using your referral code will get 5% discount.
   div.promote
-    h3.promote__title Promote you code
+    h3.promote__title Promote your code
     div.option
       p.option__title Email template
-      p.option__dexcr Send email to all your customers.
+      p.option__descr Send email to all your customers.
       div.option__img
-      a.option__link Email example
+      a(href='#').option__link Email example
     div.option
       p.option__title Paper flyer (A5)
-      p.option__dexcr Print out the flyer and give it out the customers.
-      div.option__preview
-      a.option__link Download PDF
-      a.option__link Download PSD
-      a.option__link Download JPG
+      p.option__descr Print out the flyer and give it out the customers.
+      div.option__img.option__img--small
+      a(href='#').option__link Download PDF
+      a(href='#').option__link Download PSD
+      a(href='#').option__link Download JPG
     div.option
       p.option__title Social media
-      p.option__dexcr Share your code through social media
-      a.option__social Tween
-      a.option__social Share
-      a.option__social Share
+      p.option__descr Share your code through social media
+      a(href='#').option__social
+        svg.option__svg(width='20' height='20')
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-twitter")
+        | Tweet
+      a(href='#').option__social
+        svg.option__svg(width='20' height='20')
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-facebook")
+        | Share
+      a(href='#').option__social
+        svg.option__svg(width='20' height='20')
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-google")
+        | Share
   p.content__text With all questions email us on referral@envy.rent.
