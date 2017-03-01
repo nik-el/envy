@@ -1,4 +1,4 @@
-@media (--latex-tablet){
+@media (--laptop){
   .benefit{
     width: 312px;
     &:first-of-type{
@@ -8,5 +8,92 @@
     }
   }
 
+
+}
+
+@media (--tablet){
+  .content{
+    &__title{
+      margin-bottom: 30px;
+      line-height: 6rem;
+      text-align: center;
+    }
+    &__text{
+    text-align:center;
+  }
+
+  }
+  .benefit{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align:center;
+    &:first-of-type{
+      display: block;
+      width: 100%;
+    }
+    &__title{
+      margin-bottom: 10px;
+      font-size: 8rem;
+
+    }
+    &__descr{
+      line-height:2.6rem;
+    }
+  }
+
+  .option{
+    width: 100%;
+    padding-right: 10px;
+
+    text-align:center;
+    &__img{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__link{
+      display: inline-block;
+      margin: 0 20px;
+      margin-bottom: 12px;
+      &--string{
+        margin: 0px;
+      }
+    }
+
+    &__social{
+      margin: 5px 20px;
+    }
+  }
+
+  .promote{
+    margin-bottom: 10px;
+    &__title{
+      line-height: 4.5rem;
+      text-align: center;
+    }
+  }
+
+
+  .footer{
+    &__list{
+      margin-bottom:15px;
+      margin-right: 10px;
+    }
+    &__contact{
+      position: relative;
+    }
+  }
+}
+
+@media (--mobile){
+  .header{
+    &__descr{
+      width: 90px;
+      font-size: 1.5rem;
+    }
+    &__descr::after{
+      display: none;
+    }
+  }
 
 }
