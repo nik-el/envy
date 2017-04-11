@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){$(document).on("mouseover mouseout","a",function(e){var t=$(this).attr("href");t&&"#"!=t&&$("a").filter('[href="'+$(this).attr("href")+'"]').toggleClass("hover","mouseover"==e.type)})});
+"use strict";document.addEventListener("DOMContentLoaded",function(){window.onscroll=function(){var e=document.querySelector(".scroll__progress"),t=window.pageYOffset||document.documentElement.scrollTop,o=document.documentElement.scrollHeight-document.documentElement.clientHeight,n=parseFloat(100*t/o),c=+n.toFixed(1);e.style.width=c+"%"}});
