@@ -2,12 +2,14 @@ div.content
   div.container
     ul.policies-nav
       li.policies-nav__item.policies-nav__item--title Terms & policies
-      li.policies-nav__item.policies-nav__item--selected 
-        span.link Terms of Service
+      li.policies-nav__item
+        a(href="#").policies-nav__link.policies-nav__link--selected
+          span.link Terms of Service
       - var terms = ['Reservations, cancellations and fees', 'Car use: cleaning, smoking etc.', 'Tickets, tolls and towing', 'Coverage Policy', 'Privacy policy', 'Cookie policy', 'Hawaiian laws']
       for list in terms
-        a(href="#").policies-nav__item
-          span.link= list
+        li.policies-nav__item
+          a(href="#").policies-nav__link
+            span.link= list
     div.content__policies
       h1.content__title.content__title--light Terms of Service
       p.content__text Last revised: March 29, 2017

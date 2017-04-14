@@ -1,4 +1,10 @@
 @media (--laptop){
+  .content{
+    &__policies{
+      width: 100%;
+    }
+  }
+  
   .benefit{
     width: 312px;
     &:first-of-type{
@@ -7,16 +13,21 @@
       margin-bottom: 20px;
     }
   }
-/*
+
 
   .policies-nav{
-    float: left;
-      &__item{
-        display: inline-block;
+    float:none;
+    max-width: 800px;
+    min-height: 50px;
+    &__item{
+      display: inline-block;
+      vertical-align: top;
+
+      &--title{
+        display: block;
       }
-
-  }*/
-
+    }
+  }
 }
 
 @media (--tablet){
@@ -35,8 +46,11 @@
       text-align: center;
     }
     &__text{
-    text-align:center;
-  }
+    text-align: left;
+    }
+    &__policies{
+      width: 100%;
+    }
 
   }
   .benefit{
