@@ -3,9 +3,24 @@
   &__about{
     max-width: 800px;
   }
+  &__policies{
+    width: 65%;
+    max-width: 800px;
+    display: inline-block;
+    vertical-align: top;;
+  }
   &__title{
     margin: 54px 0 73px 0;
     font-size: 6rem;
+    &--small{
+      margin: 31px 0 14px;
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+    &--light{
+      margin-top: 30px;
+      font-weight: 400;
+    }
   }
   &__text{
     font-size: 1.8rem;
@@ -145,4 +160,41 @@
       background-color: rgba(199,35,25,0.2);
     }
   }
+}
+
+
+/* Terms & Policies*/
+
+.policies-nav{
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-top: 20px;
+  max-width: 300px;
+  min-height: 500px;
+
+  background: #f3f3f3;
+
+  &__item{
+    display: block;
+    padding: 12px 9px 29px 9px;
+
+    min-height: 81px;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    border-bottom: 0;
+
+    &--title{
+      font-weight: 700;
+      padding: 16px 9px 18px 9px;
+      min-height: 40px;
+    }
+
+    &--selected{
+      background: #fde344;
+    }
+  }
+
 }

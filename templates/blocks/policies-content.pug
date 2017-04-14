@@ -1,12 +1,20 @@
 div.content
   div.container
-    div.content__about
-      h1.content__title Terms of Service
+    ul.policies-nav
+      li.policies-nav__item.policies-nav__item--title Terms & policies
+      li.policies-nav__item.policies-nav__item--selected 
+        span.link Terms of Service
+      - var terms = ['Reservations, cancellations and fees', 'Car use: cleaning, smoking etc.', 'Tickets, tolls and towing', 'Coverage Policy', 'Privacy policy', 'Cookie policy', 'Hawaiian laws']
+      for list in terms
+        a(href="#").policies-nav__item
+          span.link= list
+    div.content__policies
+      h1.content__title.content__title--light Terms of Service
       p.content__text Last revised: March 29, 2017
       p.content__text Thank you for your interest in Envy!
       p.content__text
         | Please read these terms of service carefully as they contain important information regarding your legal rights, remedies, and obligations. These include various limitations and exclusions, a clause that governs the jurisdiction and venue of disputes, and obligations to comply with applicable laws and regulations.
-      h2.content__title Introduction
+      h2.content__title.content__title--small Introduction
       p.content__text
         | Envy Hawaii, LLC dba Envy (hereinafter, “Envy,” “we,” or “us”), provides service for car rental. Envy is accessible online including at 
         a.content__link(href="hhtp://www.envy.rent") www.envy.rent
@@ -16,7 +24,7 @@ div.content
       p.content__text
         | If you have any questions for us concerning this Agreement or Envy generally, please contact us at 
         a(href="mailto:info@envy.rent").content__link info@envy.rent.
-      h2.content__title General Terms
+      h2.content__title.content__title--small General Terms
       p.content__text
         | Eligibility. Our Services are intended solely for persons who are 18 or older. Any use of the Services by anyone under 18 is expressly prohibited.
       p.content__text
@@ -29,3 +37,6 @@ div.content
         | Ongoing Information Updates. You promise to update the information you have provided to Envy in the event of any changes to your driving record, contact information, or background (such as a criminal convictions). Specifically with respect to your contact information, Envy may deliver notices to you at the most recent email, telephone, or billing address provided by you, and those notices will be considered valid even if you no longer maintain the email account, telephone number, or receive mail at that address. Also, you are and will be solely responsible for all of the activity that occurs through your account, so please keep your password and account information secure. You agree that you will not disclose your password to any third party and that you will take sole responsibility for any activities or actions under your Envy Account, whether or not you have authorized such activities or actions. You will immediately notify Envy of any actual or suspected unauthorized use of your Envy Account. We are not responsible for your failure to comply with this clause, or for any delay in shutting down your account after you have reported a breach of security to us.
       p.content__text
         | Your Commitments. You agree that you will always use Envy in compliance with the Terms of this Agreement and any other policies and standards provided to you by Envy. You commit that you’ll be a legally licensed driver, who will treat the car well and will take all reasonable measures to return the car on time in essentially the same condition that you received it. In connection with your use of or access to the Services you may not, and you agree that you will not, nor advocate, encourage, request, or assist any third party to:
+
+      
+      
